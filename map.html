@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>แผนที่และการเดินทาง | วิทยาลัยเทคนิคนางรอง</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">🏫 วิทยาลัยเทคนิคนางรอง</a>
+    <nav>
+      <a href="index.html">หน้าแรก</a>
+      <a href="about.html">ข้อมูลวิทยาลัย</a>
+      <a class="active" href="map.html">แผนที่</a>
+      <a href="contact.html">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <section class="hero" style="padding:45px 6% 55px">
+    <h1>🗺️ แผนที่และการเดินทาง</h1>
+    <p>ค้นหาเส้นทางมายังวิทยาลัยได้ง่ายๆ</p>
+  </section>
+
+  <main class="container">
+    <h2>แผนที่ตั้งวิทยาลัย</h2>
+    <div class="map">
+      <!-- iframe = ฝังหน้า Google Maps ลงในเว็บ; q= คือคำค้นหาสถานที่ ไม่ต้องใช้ API key -->
+      <iframe src="https://www.google.com/maps?q=วิทยาลัยเทคนิคนางรอง&output=embed" loading="lazy" allowfullscreen></iframe>
+      <!-- loading="lazy" = โหลดแผนที่เมื่อเลื่อนมาถึง ทำให้หน้าเปิดเร็วขึ้น -->
+    </div>
+
+    <p style="text-align:center;margin:22px 0">
+      <!-- ลิงก์นี้เปิดแอป/เว็บ Google Maps แล้วนำทางจากตำแหน่งผู้ใช้มายังวิทยาลัย; target=_blank = เปิดแท็บใหม่ -->
+      <a class="btn" target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=วิทยาลัยเทคนิคนางรอง">🧭 นำทางด้วย Google Maps</a>
+    </p>
+
+    <h2>วิธีเดินทาง</h2>
+    <div class="grid">
+      <div class="card"><h3>🚗 รถยนต์ส่วนตัว</h3><p>[แก้ไข] ใส่เส้นทาง เช่น ใช้ถนน... แล้วเลี้ยวเข้า...</p></div>
+      <div class="card"><h3>🚌 รถโดยสาร</h3><p>[แก้ไข] ใส่สายรถ/จุดลงรถที่ใกล้วิทยาลัย</p></div>
+      <div class="card"><h3>🚆 รถไฟ</h3><p>[แก้ไข] ใส่สถานีที่ใกล้ที่สุดและวิธีต่อรถ</p></div>
+    </div>
+
+    <h2>ภาพแผนผังและทางเข้า</h2>
+    <!-- ▼▼ ใส่รูปแผนผังวิทยาลัย: images/campus-map.jpg ▼▼ -->
+    <div class="photo"><img src="images/campus-map.jpg" alt="แผนผังวิทยาลัย" onerror="this.style.display='none'">รูปแผนผังวิทยาลัย (images/campus-map.jpg)</div>
+    <!-- ▼▼ ใส่รูปป้ายทางเข้า: images/gate.jpg ▼▼ -->
+    <div class="photo"><img src="images/gate.jpg" alt="ทางเข้าวิทยาลัย" onerror="this.style.display='none'">รูปทางเข้า (images/gate.jpg)</div>
+
+    <p style="text-align:center"><a class="btn" href="index.html">← กลับหน้าแรก</a></p>
+  </main>
+
+  <footer>© 2026 วิทยาลัยเทคนิคนางรอง จ.บุรีรัมย์</footer>
+</body>
+</html>
